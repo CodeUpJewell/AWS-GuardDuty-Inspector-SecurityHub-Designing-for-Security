@@ -1,0 +1,16 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+  
+**EC2.9 EC2 instances should not have a public IPv4 address
+**EC2.19 Security groups should not allow unrestricted access to ports with high risk
+**EC2.2 The VPC default security group should not allow inbound and outbound traffic
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+
+**On instance i-0f6d95e9f668daafb, ENI eni-0ca4120e19a3de108 and security group sg-0f44831b60dca8b18 allow access from the internet to tcp ports [[0 - 65535]] and udp ports [[0 - 65535]]. 
+ENI eni-0ca4120e19a3de108 is located in VPC vpc-0f5a545c6afabd60f with access control list acl-018fed8447b8227f0. 
+These ports are reachable from the internet through Internet Gateway igw-0f197c13d29de4131
+
+**The security group, instance and ENI should only enable the nessecary ports for use. 
+We should close port 20,23,21, for inbound asap on the instance i-0f6d95e9f668daafb, subnets and security groups.
+ The default security group of every VPC should restrict all traffic. We should also enabled MFA for the root account.
+

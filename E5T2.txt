@@ -1,0 +1,37 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+
+Terrafirma is another tool for static code analysis used for Terraform plans. It is designed to detect security misconfigurations.
+
+### Example vulnerability
+
+SecurityGroup has an all traffic is allowed ingress rule for SSH on port 22. 
+
+##Scan AMI’s or containers for OS vulnerabilities
+
+Clair is an open-source project which offers static security and vulnerability scanning for docker and application (appc) containers.
+
+It is an API driven analysis engine that checks for security flaws in the containers layer by layer. 
+You can build services using Clair, which can monitor your containers continuously for any container vulnerabilities. 
+It notifies you about a potential threat in the container.  It notifies you about a potential threat in the container based on the Common Vulnerabilities and Exposures database (CVE) and similar databases.
+
+### Example vulnerability
+
+
+Vulnerability Category				Vulnerability Impact 		Severity			CVE Numbers
+
+Access of Memory Location After End of Buffer (CWE-788)	Arbitrary Code Execution    		Critical  			CVE-2021-40783
+
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+
+AWS Config provides a detailed view of the configuration of AWS resources in your AWS account. This includes how the resources are related to one another and how they were configured in the past so that you can see how the configurations and relationships change over time.
+
+An AWS resource is an entity you can work with in AWS, such as an Amazon Elastic Compute Cloud (EC2) instance, an Amazon Elastic Block Store (EBS) volume, a security group, or an Amazon Virtual Private Cloud (VPC). 
+
+### Example vulnerability
+
+Evaluate AWS resource configurations for desired settings. Checks that your S3 bucket has S3 default encryption enabled as best practices.
+
+
