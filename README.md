@@ -17,12 +17,14 @@ Project Files
     E4T1.txt: Text file listing 2-3 changes that can be made to environment to prevent an ssh brute force attack from the internet and also 2-3 points about how to secure the sensitive data in S3.
    
     E4T4.txt: What additional architectural change can be made to reduce the internet-facing attack surface of the web application instance. 
-    Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket. 
+    Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket? 
     
     Will applying default encryption setting to the s3 buckets encrypt the data that already exists? The changes you made above were done through the console or CLI; describe the outcome if the original cloud formation templates are applied to this environment?
 
 
-    E5T2.txt: You will need to determine appropriate tools to incorporate into the pipeline to ensure that security vulnerabilities are found. Identify tools that will allow you to do the following: a. Scan infrastructure as code templates. b. Scan AMI’s or containers for OS vulnerabilities. c. Scan an AWS environment for cloud configuration vulnerabilities. For each tool we identify an example compliance violation or vulnerability which it might expose.
+    E5T2.txt: You will need to determine appropriate tools to incorporate into the pipeline to ensure that security vulnerabilities are found. 
+    
+    Identify tools that will allow you to do the following: a. Scan infrastructure as code templates. b. Scan AMI’s or containers for OS vulnerabilities. c. Scan an AWS environment for cloud configuration vulnerabilities. For each tool we identify an example compliance violation or vulnerability which it might expose.
 
     
     Free_recipe.txt: Text file containing our mother's delicious Banana Bread recipe.
