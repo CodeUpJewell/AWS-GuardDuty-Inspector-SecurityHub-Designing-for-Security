@@ -10,7 +10,7 @@ Project Files
  
     E1T4.txt: Identify 2-3 changes that can be made to our environment to prevent an SSH brute force attack from the internet. Neither instance should have had access to the secret recipes bucket; even in the instance that API credentials were compromised how could we have prevented access to sensitive data?
 
-    E2T2.txt: Text file providing recommendations on how to remediate the vulnerabilities.
+    E2T2.txt: Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project. We then provide recommendations on how to remediate the vulnerabilities.
     
     E3T1.txt: What findings were detected related to the brute force attack? AWS GuardDuty documentation and explanation of what was it's source of information?
     
@@ -25,11 +25,9 @@ Project Files
     Free_recipe.txt: Text file containing our mother's delicious Banana Bread recipe.
     secret_recipe.txt: Text file containg our secret delicious recipe. Should only be given to those with the appropriate permissions.
     
-    eview CloudFormation Template
-
 In this task, the objective is to familiarize yourself with the starter code and to get you up and running quickly. Spend a few minutes going through the .yml files in the starter folder to get a feel for how parts of the code will map to the components in the architecture diagram.
 
-Additionally, we have CloudFormation templates which will deploy the following resources in AWS:
+Additionally, we utiilize CloudFormation templates which will deploy the following resources in AWS:
 VPC Stack for the underlying network:
 
     c3-vpc.yml:
@@ -51,5 +49,3 @@ Application stack:
 
     c3-s3_solution.yml: CloudFormation template that deploys an S3 bucket for storage of recipes woth default encryption enabled.
     c3-app_solution.yml: CloudFormation template that deploys ec2 instances for the project starter. Security group rules only accept traffic from specific ports in this template.
-    screenshots: This folder contains all the screenshots captured during this project.
-
