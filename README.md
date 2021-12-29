@@ -2,7 +2,7 @@
 
 This is the third major project in Udacity AWS Cloud Architect Nanodegree.
 
-In this project, you will:
+In this project, I will:
 
     Deploy and assess a simple web application environment’s security posture
     Test the security of the environment by simulating attack scenarios and exploiting cloud configuration vulnerabilities
@@ -12,11 +12,11 @@ In this project, you will:
 
 Project Files
 
- As a Cloud Architect, you have been asked to apply security best practices to the environment so that it can withstand attacks and be more secure.
+ As a Cloud Architect, I have been asked to apply security best practices to the environment so that it can withstand attacks and be more secure.
  
-    E1T4.txt: Identify 2-3 changes that can be made to our environment to prevent an SSH brute force attack from the internet. Neither instance should have had access to the secret recipes bucket; even in the instance that API credentials were compromised how could we have prevented access to sensitive data?
+    E1T4.txt: Identify 2-3 changes that can be made to our environment to prevent an SSH brute force attack from the internet. Neither instance should have had access to the secret recipes bucket; in the event the instance API credentials were compromised how could we have prevented access to sensitive data?
 
-    E2T2.txt: Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project. We then provide recommendations on how to remediate the vulnerabilities.
+    E2T2.txt: Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project. I then provide recommendations on how to remediate the vulnerabilities.
     
     E3T1.txt: What findings were detected related to the brute force attack? AWS GuardDuty documentation and explanation of what was it's source of information?
     
@@ -25,20 +25,20 @@ Project Files
     E4T4.txt: What additional architectural change can be made to reduce the internet-facing attack surface of the web application instance. 
     Assuming the IAM permissions for the S3 bucket are still insecure, would creating VPC private endpoints for S3 prevent the unauthorized access to the secrets bucket? 
     
-    Will applying default encryption setting to the s3 buckets encrypt the data that already exists? The changes you made above were done through the console or CLI; describe the outcome if the original cloud formation templates are applied to this environment?
+    Will applying default encryption setting to the s3 buckets encrypt the data that already exists? The changes I made above were done through the console or CLI; describe the outcome if the original cloud formation templates are applied to this environment?
 
 
-    E5T2.txt: You will need to determine appropriate tools to incorporate into the pipeline to ensure that security vulnerabilities are found. 
+    E5T2.txt: I will need to determine appropriate tools to incorporate into the pipeline to ensure that security vulnerabilities are found. 
     
-    Identify tools that will allow you to do the following: a. Scan infrastructure as code templates. b. Scan AMI’s or containers for OS vulnerabilities. c. Scan an AWS environment for cloud configuration vulnerabilities. For each tool we identify an example compliance violation or vulnerability which it might expose.
+    Identify tools that will allow me to do the following: a. Scan infrastructure as code templates. b. Scan AMI’s or containers for OS vulnerabilities. c. Scan an AWS environment for cloud configuration vulnerabilities. For each tool we identify an example compliance violation or vulnerability which it might expose.
 
     
     Free_recipe.txt: Text file containing our mother's delicious Banana Bread recipe.
-    secret_recipe.txt: Text file containg our secret delicious recipe. Should only be given to those with the appropriate permissions.
+    secret_recipe.txt: Text file containg our secret delicious recipe. "Should" only be given to those with the appropriate permissions.
     
-In this task, the objective is to familiarize yourself with the starter code and to get you up and running quickly. Spend a few minutes going through the .yml files in the starter folder to get a feel for how parts of the code will map to the components in the architecture diagram.
+In this task, the objective is to familiarize myself with the starter code and to get up and running quickly. Spend a few minutes going through the .yml files in the starter folder to get a feel for how parts of the code will map to the components in the architecture diagram.
 
-Additionally, we utiilize CloudFormation templates which will deploy the following resources in AWS:
+Additionally, I utiilize CloudFormation templates which will deploy the following resources in AWS:
 VPC Stack for the underlying network:
 
     c3-vpc.yml:
